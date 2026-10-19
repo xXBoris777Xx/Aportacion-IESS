@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aportacion_IESS.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,20"
+            Spacing="18">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="140"
+                Aspect="AspectFit" />
+
+            <Label
+                Text="Aporte IESS"
+                Style="{StaticResource Headline}"
+                HorizontalOptions="Center" />
+
+            <Label Text="Nombre" />
+            <Entry x:Name="EntryNombre" Placeholder="Ingrese su nombre" />
+
+            <Label Text="Apellido" />
+            <Entry x:Name="EntryApellido" Placeholder="Ingrese su apellido" />
+
+            <Label Text="Edad" />
+            <Entry x:Name="EntryEdad" Placeholder="Ingrese su edad" Keyboard="Numeric" />
+
+            <Label Text="Salario" />
+            <Entry x:Name="EntrySalario" Placeholder="Ingrese su salario" Keyboard="Numeric" />
+
+            <Button
+                x:Name="BtnCalcular"
+                Text="Calcular aporte"
+                Clicked="OnCalcularClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
